@@ -1,7 +1,9 @@
 import React from 'react';
 import { Button } from '../ui/button';
 import { soal } from '@/lib/soal';
-import { Dialog, DialogContent, DialogHeader, DialogTrigger } from '../ui/dialog';
+import { Dialog, DialogContent, DialogFooter, DialogHeader, DialogTrigger } from '../ui/dialog';
+import { ArrowDown, ArrowUp } from 'lucide-react';
+import { Badge } from '../ui/badge';
 
 export const Peta = () => {
   // Mengambil nomor soal dari array soal
@@ -32,6 +34,14 @@ export const Peta = () => {
                   <span className="font-semibold">Jawaban: </span>
                   {soalItem.jawab}
                 </p>
+                <div className="flex gap-2 justify-center items-center">
+                  <Badge className="flex gap-1 items-center ">
+                    <ArrowUp className="w-4 h-4" /> <p>+ {soalItem.maju}</p>
+                  </Badge>
+                  <Badge variant="destructive" className="flex gap-1 items-center">
+                  <ArrowDown className="w-4 h-4 ml-2" /> <p>- {soalItem.mundur}</p>
+                  </Badge>
+                </div>
               </DialogContent>
             </Dialog>
           );

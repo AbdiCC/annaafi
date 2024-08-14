@@ -12,7 +12,7 @@ export default function Home() {
           <Button className="w-full">Peta Ular Tangga</Button>
         </Link>
         
-        <Link href="/soal">
+        <Link href="/">
         <Button variant="outline" className="w-full border-primary border">Soal Ular Tangga</Button>
         </Link>
       </div>

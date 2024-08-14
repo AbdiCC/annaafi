@@ -1,10 +1,22 @@
 import { Peta } from '@/components/layout/peta'
+import { Button } from '@/components/ui/button'
 import React from 'react'
 
 const page = () => {
   return (
-    <div>
+    <div className="flex flex-col gap-8">
       <Peta />
+
+      <div className="space-y-2">
+        <div className="flex gap-2 items-center">
+          <Button size="icon" className='text-xs'>##</Button>
+          <p className="text-sm">Kotak berisi soal</p>
+        </div>
+        <div className="flex gap-2 items-center">
+          <Button variant="outline" size="icon" className='text-xs'>##</Button>
+          <p className="text-sm">Kotak tidak berisi soal</p>
+        </div>
+      </div>
     </div>
   )
 }
