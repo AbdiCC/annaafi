@@ -4,8 +4,10 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div className="flex flex-col gap-8">
-      <Peta />
+    <div className="flex flex-col gap-8 md:items-center md:w-screen">
+      <div className="max-w-lg">
+        <Peta />
+      </div>
 
       <div className="space-y-2">
         <div className="flex gap-2 items-center">
