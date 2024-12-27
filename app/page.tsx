@@ -13,7 +13,7 @@ export default function Home() {
         </Link>
 
         <Link href="https://forms.gle/MAQqy4yiKh9M3GPK8">
-          <Button variant="outline" className="w-full border-primary border">Daftar Tahsin Akselerasi</Button>
+          <Button variant="outline" className="w-full border-primary border">Daftar Tahsin Umum</Button>
         </Link>
       </div>
     </div>
