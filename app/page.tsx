@@ -12,8 +12,10 @@ export default function Home() {
           <Button className="w-full">Daftar Tahsin Anak</Button>
         </Link>
 
-        <Link href="https://forms.gle/MAQqy4yiKh9M3GPK8">
-          <Button variant="outline" className="w-full border-primary border">Daftar Tahsin Umum</Button>
+        <Link href="#">
+          <Button variant="outline" className="w-full border-primary border" disabled>
+            Daftar Tahsin Umum {"\n"}(Sudah Penuh)
+          </Button>
         </Link>
       </div>
     </div>
